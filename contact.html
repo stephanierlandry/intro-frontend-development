@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <img src="http://via.placeholder.com/200x70" alt="logo" >
+      <img src="http://via.placeholder.com/200x70" alt="" >
         <nav>
           <ul>
             <li>
@@ -33,11 +33,26 @@
             <br>
             <a href="mailto:stephanierlandry@gmail.com">Contact me</a>
         </section>
+        <div>
+          <form action="" method="post">
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" required>
+
+            <label for="phone" >Telephone: </label>
+            <input type="tel" id="phone">
+
+            <label for="message">Message: </label>
+            <textarea maxlength="240" id="message" required></textarea>
+
+            <input type="submit" value="Send message">
+          </form>
+        </div>
         <footer>
           <p>Find me on</p>
             <img src="/img/github.svg" alt="Github">
             <img src="/img/twitter.svg" alt="Twitter">
             <img src="/img/linkedin.svg" alt="LinkedIn">
         </footer>
+      <script src="js/tota11y.min.js"></script>
   </body>
 </html>
