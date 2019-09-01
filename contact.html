@@ -7,22 +7,22 @@
   <body>
     <header>
       <img src="http://via.placeholder.com/200x70" alt="" >
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
+          <nav role="menubar">
+            <ul>
+              <li role="presentation">
+                <a href="index.html" role="menuitem">Home</a>
+              </li>
+              <li>
+                  <a href="about.html" role="menuitem" aria-label="About Me">About</a>
+              </li>
+              <li>
+                <a href="contact.html" role="menuitem">Contact</a>
+              </li>
+            </ul>
           </nav>
-        </header>
-        <h1>Contact</h1>
-        <section>
+    </header>
+    <h1>Contact</h1>
+      <section>
             Stephanie Landry<br>
             New Orleans <br>
             Louisiana<br>
@@ -32,18 +32,19 @@
             <a href="mailto:stephanierlandry@gmail.com">stephanierlandry@gmail.com</a><br>
             <br>
             <a href="mailto:stephanierlandry@gmail.com">Contact me</a>
-        </section>
+      </section>
+      <br>
         <div>
           <form action="" method="post">
             <label for="email">E-mail: </label>
-            <input type="email" id="email" required>
-
+            <input type="email" id="email" required><br>
+              <br>
             <label for="phone" >Telephone: </label>
-            <input type="tel" id="phone">
-
+            <input type="tel" id="phone"><br>
+              <br>
             <label for="message">Message: </label>
-            <textarea maxlength="240" id="message" required></textarea>
-
+            <textarea maxlength="240" id="message" required></textarea><br>
+              <br>
             <input type="submit" value="Send message">
           </form>
         </div>

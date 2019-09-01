@@ -7,51 +7,63 @@
     <body>
       <header>
         <img src="http://via.placeholder.com/200x70" alt="" >
-          <nav>
+          <nav role="menubar">
             <ul>
-              <li>
-                <a href="index.html">Home</a>
+              <li role="presentation">
+                <a href="index.html" role="menuitem">Home</a>
               </li>
               <li>
-                  <a href="about.html">About</a>
+                  <a href="about.html" role="menuitem" aria-label="About Me">About</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" role="menuitem">Contact</a>
               </li>
             </ul>
           </nav>
       </header>
       <section>
-          <h1>About</h1>
-            <h3>My Skills</h2>
-              <ul>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Lightroom</li>
-              </ul>
+        <h1>About</h1>
+          <p>Stephanie Landry is was born and raised in south <br>
+          In 2012, she graduated from Louisiana State University. <br>
+          After six years of working as an artist and project manager, <br>
+          she began learning Web Development.</p>
       </section>
       <table>
+      <thead>
         <tr>
-          <td>Skills</td>
-          <td>Years of Experience</td>
-          <td>Level of Expertise</td>
+          <th>Skills</th>
+          <th>Years of Experience</th>
+          <th>Level of Expertise</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <td>HTML</td>
-          <td>3</td>
+          <td>Adobe PhotoShop</td>
+          <td>6</td>
           <td>Advanced</td>
         </tr>
         <tr>
-          <td>CSS</td>
-          <td>2</td>
+          <td>Adobe Illustrator</td>
+          <td>3</td>
           <td>Intermediate</td>
         </tr>
         <tr>
-          <td>JavaScript</td>
+          <td>Adobe Lightroom</td>
+          <td>6</td>
+          <td>Advanced</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
           <td>1</td>
           <td>Beginner</td>
         </tr>
-      </table>
+        <tr>
+          <td>CSS</td>
+          <td>1</td>
+          <td>Beginner</td>
+        </tr>
+      </tbody>
+  </table>
       <footer>
         <p>Find me on</p>
           <img src="img/github.svg" alt="Github">
