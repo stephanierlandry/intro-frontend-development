@@ -7,9 +7,9 @@
       <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-      <header>
-        <img src="http://via.placeholder.com/200x70" alt="" >
-          <nav >
+      <header class="page-header">
+        <img src="img/SRLlogo.svg" alt="" class="page-header__item">
+          <nav class="page-header__item">
             <ul role="menubar" class="navigation-list">
               <li role="presentation">
                 <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
@@ -20,28 +20,28 @@
               <li>
                 <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
               </li>
+              <li>
+                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+              </li>
             </ul>
           </nav>
       </header>
-      <section>
-        <img src="http://via.placeholder.com/150x150" alt="">
-        <div>
-          <h1>Hello World!</h1>
-            <p>My name is Stephanie Landry. I am a <span>web</span> developer from Louisiana.</p>
+      <section class="profile">
+        <img src="img/biopic.jpg" alt="A portrait of Stephanie standing against a colorful wall" class="profile__portrait">
+        <div class="profile-copy">
+          <h1 class="header__left">Hello World!</h1>
+            <p>My name is Stephanie Landry. I am a <span>web</span> developer from New Orleans.</p>
               <a href="#">Checkout some of my code</a>
         </div>
       </section>
-      <div>
-        <a href="#">Default Link</a>
-        <button type="button">Default Button</button>
-        <!-- <button class="button__secondary">Secondary Button</button> -->
-      </div>
-      <footer>
-        <p>Find me on</p>
-          <img src="img/github.svg" alt="Github">
-          <img src="img/twitter.svg" alt="Twitter">
-          <img src="img/linkedin.svg" alt="LinkedIn">
+      <footer class="page-footer">
+        <div class="social__media">
+          <p>Find me on</p>
+            <img src="img/github.svg" alt="Github" class="social__logo">
+            <img src="img/twitter.svg" alt="Twitter" class="social__logo">
+            <img src="img/linkedin.svg" alt="LinkedIn" class="social__logo">
+          </div>
       </footer>
-    <script src="js/tota11y.min.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>

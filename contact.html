@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <header>
-      <img src="http://via.placeholder.com/200x70" alt="" >
-          <nav>
+    <header class="page-header">
+      <img src="img/SRLlogo.svg" alt="" class="page-header__item">
+          <nav class="page-header__item">
             <ul role="menubar" class="navigation-list">
               <li role="presentation">
                 <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
@@ -20,42 +20,45 @@
               <li>
                 <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
               </li>
+              <li>
+                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+              </li>
             </ul>
           </nav>
     </header>
-    <h1>Contact</h1>
-      <section>
-            Stephanie Landry<br>
-            New Orleans <br>
-            Louisiana<br>
-            <br>
-            Tel <a href="tel:2252816826">225-281-6826</a><br>
+    <section class="contact">
+        <h1>Contact</h1>
+          <p>Stephanie Landry<br>
+            New Orleans, Louisiana
+          </p>
+            <p>Tel <a href="tel:2252816826">225-281-6826</a><br>
             Skype <a href="skype:live:.cid.45148a62469e5af0">Stephanie Landry</a><br>
             <a href="mailto:stephanierlandry@gmail.com">stephanierlandry@gmail.com</a><br>
-            <br>
             <a href="mailto:stephanierlandry@gmail.com">Contact me</a>
+            </p>
       </section>
-      <br>
-        <div>
-          <form action="" method="post">
+        <div class="contact-container">
+          <form action="" method="post" class="contact-form">
             <label for="email">E-mail: </label>
-            <input type="email" id="email" required><br>
-              <br>
-            <label for="phone" >Telephone: </label>
-            <input type="tel" id="phone"><br>
-              <br>
+            <input type="email" id="email" placeholder="you@example.com"required>
+
+            <label for="phone" >Phone: </label>
+            <input type="tel"  pattern="\d{3}[-]\d{3}[-]\d{4}" id="phone" placeholder="(000)000-0000">
+
             <label for="message">Message: </label>
-            <textarea maxlength="240" id="message" required></textarea><br>
-              <br>
-            <input type="submit" value="Send message">
+            <textarea maxlength="240" id="message" placeholder="What's up?" required></textarea>
+              
+            <input type="submit" value="Send message" class="button">
           </form>
         </div>
-        <footer>
-          <p>Find me on</p>
-            <img src="/img/github.svg" alt="Github">
-            <img src="/img/twitter.svg" alt="Twitter">
-            <img src="/img/linkedin.svg" alt="LinkedIn">
+        <footer class="page-footer">
+          <div class="social__media">
+            <p>Find me on</p>
+              <img src="img/github.svg" alt="Github" class="social__logo">
+              <img src="img/twitter.svg" alt="Twitter" class="social__logo">
+              <img src="img/linkedin.svg" alt="LinkedIn" class="social__logo">
+            </div>
         </footer>
-      <script src="js/tota11y.min.js"></script>
+      <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>

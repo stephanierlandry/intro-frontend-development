@@ -7,9 +7,9 @@
       <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-      <header>
-        <img src="http://via.placeholder.com/200x70" alt="" >
-          <nav>
+      <header class="page-header">
+        <img src="img/SRLlogo.svg" alt="" class="page-header__item" >
+          <nav class="page-header__item">
             <ul role="menubar" class="navigation-list">
               <li role="presentation">
                 <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
@@ -20,17 +20,20 @@
               <li>
                 <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
               </li>
+              <li>
+                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+              </li>
             </ul>
           </nav>
       </header>
-      <section>
+      <section class="about">
         <h1>About</h1>
           <p>Stephanie Landry is was born and raised in south <br>
           In 2012, she graduated from Louisiana State University. <br>
           After six years of working as an artist and project manager, <br>
           she began learning Web Development.</p>
       </section>
-      <table>
+      <table class="experience-table">
       <thead>
         <tr>
           <th>Skills</th>
@@ -66,12 +69,14 @@
         </tr>
       </tbody>
   </table>
-      <footer>
-        <p>Find me on</p>
-          <img src="img/github.svg" alt="Github">
-          <img src="img/twitter.svg" alt="Twitter">
-          <img src="img/linkedin.svg" alt="LinkedIn">
-      </footer>
-    <script src="js/tota11y.min.js"></script>
+  <footer class="page-footer">
+    <div class="social__media">
+      <p>Find me on</p>
+        <img src="img/github.svg" alt="Github" class="social__logo">
+        <img src="img/twitter.svg" alt="Twitter" class="social__logo">
+        <img src="img/linkedin.svg" alt="LinkedIn" class="social__logo">
+      </div>
+  </footer>
+    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>
