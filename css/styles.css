@@ -219,6 +219,10 @@ a.navigation-list__item:hover:before, a.navigation-list__item:hover:after
 
 /*Work Section*/
 
+.grid-container {
+  padding: 1em;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -340,13 +344,6 @@ a.navigation-list__item:hover:before, a.navigation-list__item:hover:after
 
 /*Media Queries*/
 
-
-@media all and (max-width: 320px) {
-  .page-header {
-    width: 40%
-  }
-
-}
 
 @media all and (max-width: 500px) {
   .grid {
