@@ -326,9 +326,11 @@ a.navigation-list__item:hover:before, a.navigation-list__item:hover:after
 
 /*Media Queries*/
 
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
+    grid-column-gap: 1em;
   }
 
   .page-header__logo {
@@ -394,9 +396,7 @@ a.navigation-list__item:hover:before, a.navigation-list__item:hover:after
 
 
 @media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
