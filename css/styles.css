@@ -242,12 +242,14 @@ a.navigation-list__item:hover:before, a.navigation-list__item:hover:after
   text-align: center;
 }
 /* Footer */
+
 .page-footer {
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 2%;
+  position: fixed;
 }
 
 
