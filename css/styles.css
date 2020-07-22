@@ -12,7 +12,7 @@ active link: #F5DD73
 :root {
   --background-primary: #161A19;
   --primary-font-color: #DEFFFB;
-  --secondary-color: #20FFE3;
+  --secondary-color: #F53917;
   --primary-transition: all .25s ease-in-out;
 }
 
@@ -30,7 +30,6 @@ body {
 }
 
 h1 {
-  color: var(--secondary-color);
   font-size: 9em;
   font-weight: 700;
   margin: 0;
@@ -141,10 +140,11 @@ input {
   position: absolute;
   right: 5em;
   margin-top: 1.5em;
-  top: -4em;
+  top: -9em;
 }
 
 .header__left {
+  color: var(--primary-font-color);
   font-size: 14em;
   text-align: start;
   margin: 0em .15em 0em .15em;
@@ -161,10 +161,20 @@ input {
   text-align: center;
 }
 
-.illustration {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
+.about-title {
+  color: var(--secondary-color);
+  font-size: 7em;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 200;
+  text-align: start;
+  margin-left: 0.5em;
+}
+
+.about-copy {
+  font-size: 1.25em;
+  line-height: 1.65em;
+  text-align: end;
+  margin: 0em 1.5em 1.5em 1.5em
 }
 
 /* Contact Page */
@@ -224,6 +234,8 @@ input {
   justify-content: center;
   width: 100%;
   margin-bottom: 1em;
+  background-color: var(--background-primary);
+  padding: 2em;
 }
 
 .social__media {
@@ -343,15 +355,22 @@ input {
 
   .profile-text {
     text-align: center;
+    margin: 1.5em;
   }
 
   .profile-img {
     right: 3em;
+    margin-top: 6em;
+  }
+
+  .about-copy {
+    text-align: center;
+    margin-bottom: 6em;
   }
 
   .page-footer {
-    bottom: -1.75em;
-    margin-bottom:0;
+    margin-bottom: 0;
+    background-color: var(--background-primary);
   }
 
   ul li {
@@ -414,10 +433,13 @@ input {
     margin: 2em;
   }
 
+  .profile-img {
+    margin-top: 6em;
+  }
+
   .page-footer {
     bottom: -1.75em;
     margin-bottom:0;
-  }
 }
 
 
