@@ -30,30 +30,33 @@
       </nav>
     </header>
 
-    <section class="contact section-height">
-        <h1>Contact</h1>
-          <p>Stephanie Landry<br>
-            New Orleans, Louisiana
-          </p>
+    <div class="about section-height">
+      <h1 class="title">Contact</h1>
+      <div class="contact-copy">
+        <p>Stephanie Landry<br>New Orleans, Louisiana</p>
+        <a href="mailto:stephanierlandry@gmail.com" class="link">stephanierlandry@gmail.com</a>
+      </div>
+      <div class="units-row">
+        <div class="unit-60"></div>
+        <div class="unit-40">
+          <div class="copy">
 
-            <a href="mailto:stephanierlandry@gmail.com" class="link">stephanierlandry@gmail.com</a><br>
-            <!-- <a href="mailto:stephanierlandry@gmail.com" class="link">Contact me</a> -->
-            </p>
-      </section>
-        <div class="contact-container">
-          <form action="/action_page.php" method="post" class="contact-form">
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" placeholder="you@example.com" required>
+            <div>
+              <form action="/action_page.php" method="post" class="contact-form">
+                <input type="text" id="name" placeholder="name" class="input" required>
+                <input type="email" id="email" placeholder="email" class="input" required>
+                <input type="tel"  pattern="\d{3}[-]\d{3}[-]\d{4}" id="phone" class="input" placeholder="phone">
+                <textarea maxlength="240" id="message" placeholder="What's up?" class="input" required></textarea>
 
-            <label for="phone" >Phone: </label>
-            <input type="tel"  pattern="\d{3}[-]\d{3}[-]\d{4}" id="phone" placeholder="(000)000-0000">
+                <input type="submit" value="Send message" class="button">
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
 
-            <label for="message">Message: </label>
-            <textarea maxlength="240" id="message" placeholder="What's up?" required></textarea>
 
-            <input type="submit" value="Send message" class="button">
-          </form>
-        </div>
+
 
     <footer class="page-footer flex">
       <div class="social__media flex">
