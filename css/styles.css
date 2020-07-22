@@ -92,7 +92,7 @@ input {
 
 .navigation-list {
   list-style-type: none;
-  padding-left: 10%;
+  margin: 1em 1em;
 }
 
 .navigation-list li {
@@ -338,10 +338,20 @@ input {
 
   .header__left {
     font-size: 9em;
+    margin-bottom: .25em;
   }
 
   .profile-text {
     text-align: center;
+  }
+
+  .profile-img {
+    right: 3em;
+  }
+
+  .page-footer {
+    bottom: -1.75em;
+    margin-bottom:0;
   }
 
   ul li {
@@ -399,6 +409,15 @@ input {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .social__media {
+    margin: 2em;
+  }
+
+  .page-footer {
+    bottom: -1.75em;
+    margin-bottom:0;
+  }
 }
 
 
@@ -407,6 +426,10 @@ input {
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+
+  .social__media {
+    margin: 2em;
   }
 }
 
