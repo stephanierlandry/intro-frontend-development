@@ -42,10 +42,12 @@ button,
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
-  font-family: inherit;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 10px;
   text-decoration: none;
+  color: white;
   transition: var(--primary-transition);
+  font-size: 1em;
 }
 
 button:hover,
@@ -54,14 +56,36 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.5;
+  color: white;
 }
 
 input {
   display: inline-block;
 }
 
+p {
+  margin-bottom: 0 !important;
+}
+
 .flex {
   display: flex;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-size: 7em;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 200;
+  text-align: start;
+  margin-left: 0.5em;
+  margin-bottom: 0;
+}
+
+.copy {
+  font-size: 1.25em;
+  line-height: 1.65em;
+  text-align: end;
+  margin: 0em 1.5em 1.5em 1.5em
 }
 
 /* Header */
@@ -161,22 +185,6 @@ input {
   text-align: center;
 }
 
-.about-title {
-  color: var(--secondary-color);
-  font-size: 7em;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 200;
-  text-align: start;
-  margin-left: 0.5em;
-}
-
-.about-copy {
-  font-size: 1.25em;
-  line-height: 1.65em;
-  text-align: end;
-  margin: 0em 1.5em 1.5em 1.5em
-}
-
 /* Contact Page */
 
 .contact {
@@ -185,18 +193,24 @@ input {
   text-align: center;
 }
 
+.contact-copy {
+  text-align: start;
+  margin: 0em 0 0em 4em;
+  font-size: 1.25em;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   text-align: center;
-  width: 25%;
+  width: 100%;
   margin: 0 auto;
 }
 
-.CV-button {
-  display: flex;
-  justify-content: center;
+.input{
+  margin-bottom: .5em;
+  border-radius: .15em !important;
 }
 
 /* Work Section */
@@ -233,9 +247,8 @@ input {
   left: 0;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1em;
   background-color: var(--background-primary);
-  padding: 2em;
+  padding: 1em;
 }
 
 .social__media {
@@ -261,7 +274,7 @@ input {
 /* Links throughout site */
 
 .link {
-  color: #F5CDB5;
+  color: var(--primary-font-color);
   text-decoration: none;
 }
 
@@ -363,6 +376,10 @@ input {
     margin-top: 6em;
   }
 
+  .title {
+    font-size: 5em;
+  }
+
   .about-copy {
     text-align: center;
     margin-bottom: 6em;
@@ -405,23 +422,9 @@ input {
     margin: 0;
   }
 
-  /* .navigation-list {
-    position: absolute;
+  .copy {
+   margin-top: 1em
   }
-
-  .navigation-list__item {
-    display:none;
-  }
-
-  .navigation-list__item: hover {
-    display: block;
-    transition: var(--primary-transition);
-    color: var(--secondary-color);
-  }
-
-  .fa-bars {
-    display: block;
-  } */
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -442,6 +445,10 @@ input {
     margin-bottom:0;
 }
 
+  .copy {
+    margin-top: 1em;
+  }
+
 
 @media all and (max-width: 750px) {
 
@@ -452,6 +459,10 @@ input {
 
   .social__media {
     margin: 2em;
+  }
+
+  .copy {
+    margin-top: 1em;
   }
 }
 
