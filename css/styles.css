@@ -233,9 +233,8 @@ input {
   left: 0;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1em;
   background-color: var(--background-primary);
-  padding: 2em;
+  padding: 1em;
 }
 
 .social__media {
