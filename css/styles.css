@@ -71,6 +71,15 @@ p {
   display: flex;
 }
 
+.align-end {
+  align-self: flex-end;
+}
+
+.underline {
+  text-decoration: underline !important;
+
+}
+
 .title {
   color: var(--secondary-color);
   font-size: 7em;
@@ -231,19 +240,32 @@ p {
   width:300px;
   height: 300px;
   transition: var(--primary-transition);
-  opacity: .2;
+
 }
 
 .grid_item:hover {
-  /* width: 400px;
-  height: 400px; */
-  opacity: .9;
+  width: 400px;
+  height: 400px;
+
 }
 
 .grid__item-header {
   color: var(--seconday-color);
   margin-top: 10px;
   text-align: center;
+}
+
+/*Portfolio Pages*/
+
+.work-img {
+  margin: 2em;
+  width: 250px;
+  margin-right: 8em;
+  transition: var(--primary-transition);
+}
+
+.work-img:hover {
+  opacity: .2;
 }
 
 /* Footer */
