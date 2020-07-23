@@ -9,6 +9,8 @@ active link: #F5DD73
 
 */
 
+@import 'plygrid/dist/css/ply-essentials.min.css';
+
 :root {
   --background-primary: #161A19;
   --primary-font-color: #DEFFFB;
