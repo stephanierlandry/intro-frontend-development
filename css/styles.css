@@ -77,7 +77,10 @@ p {
 
 .underline {
   text-decoration: underline !important;
+}
 
+.fixed {
+  position: fixed;
 }
 
 .title {
@@ -356,6 +359,10 @@ p {
     grid-column-gap: 1em;
   }
 
+  .grid_item{
+    justify-self: center;
+  }
+
   .page-header__logo {
     width: 60%;
   }
@@ -387,6 +394,7 @@ p {
   .page-footer {
     margin-bottom: 0;
     background-color: var(--background-primary);
+    position: unset;
   }
 
   ul li {
@@ -422,7 +430,7 @@ p {
   }
 
   .copy {
-   margin-top: 1em
+   margin-top: 1em;
   }
 
   .img-gallery{
