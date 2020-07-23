@@ -4,63 +4,68 @@
     <title>Stephanie Landry</title>
     <link rel="shortcut icon" href="img/android-chrome-192x192.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/plygrid/dist/css/ply.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+    <meta  charset="UTF-8">
   </head>
+
   <body>
     <header class="page-header">
-      <img src="img/SRLlogo.svg" alt="" class="page-header__logo">
-          <nav class="page-header__item">
-            <ul role="menubar" class="navigation-list">
-              <li role="presentation">
-                <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-              </li>
-              <li>
-                  <a href="about.html" role="menuitem" aria-label="About Me" class="navigation-list__item">About</a>
-              </li>
-              <li>
-                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-              </li>
-              <li>
-                <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-              </li>
-            </ul>
-          </nav>
+      <nav class="page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+            </li>
+            <li>
+                <a href="about.html" role="menuitem" aria-label="About Me" class="navigation-list__item">About</a>
+            </li>
+            <li>
+              <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            </li>
+            <li>
+              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            </li>
+          </ul>
+      </nav>
     </header>
-    <section class="contact">
-        <h1>Contact</h1>
-          <p>Stephanie Landry<br>
-            New Orleans, Louisiana
-          </p>
-            <p>Tel <a href="tel:2252816826" class="link">225-281-6826</a><br>
-            Skype <a href="skype:live:.cid.45148a62469e5af0" class="link">Stephanie Landry</a><br>
-            <a href="mailto:stephanierlandry@gmail.com" class="link">stephanierlandry@gmail.com</a><br>
-            <!-- <a href="mailto:stephanierlandry@gmail.com" class="link">Contact me</a> -->
-            </p>
-      </section>
-        <div class="contact-container">
-          <form action="/action_page.php" method="post" class="contact-form">
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" placeholder="you@example.com" required>
 
-            <label for="phone" >Phone: </label>
-            <input type="tel"  pattern="\d{3}[-]\d{3}[-]\d{4}" id="phone" placeholder="(000)000-0000">
+    <div class="about section-height">
+      <h1 class="title">Contact</h1>
+      <div class="contact-copy">
+        <p>Stephanie Landry<br>New Orleans, Louisiana</p>
+        <a href="mailto:stephanierlandry@gmail.com" class="link">stephanierlandry@gmail.com</a>
+      </div>
+      <div class="units-row">
+        <div class="unit-60"></div>
+        <div class="unit-40">
+          <div class="copy">
 
-            <label for="message">Message: </label>
-            <textarea maxlength="240" id="message" placeholder="What's up?" required></textarea>
+            <div>
+              <form action="/action_page.php" method="post" class="contact-form">
+                <input type="text" id="name" placeholder="name" class="input" required>
+                <input type="email" id="email" placeholder="email" class="input" required>
+                <input type="tel"  pattern="\d{3}[-]\d{3}[-]\d{4}" id="phone" class="input" placeholder="phone">
+                <textarea maxlength="240" id="message" placeholder="What's up?" class="input" required></textarea>
 
-            <input type="submit" value="Send message" class="button">
-          </form>
-        </div>
-        <footer class="page-footer">
-          <div class="social__media">
-            <p>Find me on</p>
-              <img src="img/github.svg" alt="Github" class="social__logo">
-              <img src="img/twitter.svg" alt="Twitter" class="social__logo">
-              <img src="img/linkedin.svg" alt="LinkedIn" class="social__logo">
+                <input type="submit" value="Send message" class="button">
+              </form>
             </div>
-        </footer>
+          </div>
+      </div>
+    </div>
+
+    <footer class="page-footer flex">
+      <div class="social__media flex">
+        <a href="https://github.com/stephanierlandry" target="_blank">
+          <img src="img/github.svg" alt="Github" class="social__logo">
+        </a>
+        <img src="img/twitter.svg" alt="Twitter" class="social__logo">
+        <a href="https://www.linkedin.com/in/stephanierlandry/" target="_blank">
+          <img src="img/linkedin.svg" alt="LinkedIn" class="social__logo">
+        </a>
+      </div>
+    </footer>
       <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>
