@@ -61,6 +61,7 @@ button:focus,
 
 input {
   display: inline-block;
+  font-family: helvetica;
 }
 
 p {
@@ -160,7 +161,7 @@ p {
 }
 
 .profile-text {
-  font-size: 1.75em;
+  font-size: 1.65em;
   text-align: center;
   font-weight: 200;
   text-align: end;
@@ -248,6 +249,12 @@ p {
 .grid_item {
   padding: 10px;
   transition: var(--primary-transition);
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.grid_item:hover {
+  opacity: 1;
 }
 
 .grid__item-header {
@@ -257,19 +264,35 @@ p {
 }
 
 .project-img {
-  width: 300px;
+  width: 100%;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
 }
 
-.project-img:hover{
-  width:400px;
+.project-card {
+  background-color: white;
+  padding-bottom: 2em;
+  border-radius: 0.25em;
+  box-shadow: 5px 8px 8px black;
 }
+
+.card-title {
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  font-family: helvetica;
+}
+
+.card-description {
+  color: black;
+  text-align: center;
+}
+
 
 /*Portfolio Pages*/
 
 .work-img {
-  margin: 2em;
-  width: 250px;
-  margin-right: 8em;
+  margin: 2em 2em 0em 2em;
   transition: var(--primary-transition);
 }
 
@@ -277,12 +300,16 @@ p {
   opacity: .2;
 }
 
+.copy {
+  text-align: center;
+}
+
 /* Footer */
 
 .page-footer {
   clear: both;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   justify-content: center;
@@ -345,7 +372,7 @@ p {
     grid-column-gap: 1em;
   }
 
-  .grid_item{
+  .grid_item {
     justify-self: center;
   }
 
@@ -355,7 +382,7 @@ p {
 
   .header__left {
     font-size: 9em;
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
   }
 
   .profile-text {
@@ -400,7 +427,7 @@ p {
 
   .profile-copy {
     margin:0;
-    text-align:center;
+    text-align: center;
   }
 
   .header__left {
@@ -411,7 +438,7 @@ p {
     padding: 0px 20px 0px 20px;
   }
 
-  .navigation-list__item{
+  .navigation-list__item {
     margin: 0;
   }
 
@@ -419,11 +446,11 @@ p {
    margin-top: 1em;
   }
 
-  .img-gallery{
+  .img-gallery {
     display: none;
   }
 
-  .work-link{
+  .work-link {
     justify-content: center;
   }
 }
@@ -443,13 +470,13 @@ p {
 
   .page-footer {
     bottom: -1.75em;
-    margin-bottom:0;
-}
+    margin-bottom: 0;
+  }
 
   .copy {
     margin-top: 1em;
   }
-
+}
 
 @media all and (max-width: 750px) {
 
